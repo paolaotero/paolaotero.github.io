@@ -7,7 +7,7 @@ export function Info() {
       key: "diseño-editorial",
       title: "diseño editorial",
       images: [''],
-      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, obcaecati excepturi? Molestiae laborum incidunt unde? Molestias minus incidunt quo error ad quos! Dolores atque, est consequuntur iure veritatis consectetur optio nisi odit.'
+      description:'epa'
     },
     {
       key: "carteleria",
