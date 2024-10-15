@@ -1,3 +1,28 @@
+import { 
+  arial, 
+  banshees,
+  banshees1,
+  banshees2,
+  bembo,
+  blur,
+  bodoni,
+  carte_pixel,
+  end,
+  heaven1,
+  heaven2,
+  karmadame,
+  karmadame_azul,
+  love_song2,
+  love_song3,
+  manogif,
+  ondas,
+  pick_rabbits,
+  pixel_modular,
+  querer,
+  rockwell,
+  telegraf,
+  venus,
+  when1 } from "../assets/images";
 import { Card, Container, Img, Text, Title } from "./styles";
 
 export function Info() {
@@ -6,7 +31,7 @@ export function Info() {
     {
       key: "diseño-editorial",
       title: "diseño editorial",
-      images: [''],
+      images: [arial],
       description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, obcaecati excepturi? Molestiae laborum incidunt unde? Molestias minus incidunt quo error ad quos! Dolores atque, est consequuntur iure veritatis consectetur optio nisi odit.'
     },
     {
