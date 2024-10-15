@@ -48,8 +48,8 @@ export function Info() {
         <Card
           id={op.key}>
           
-          {op.images.map((_img) =>
-            <Img /> 
+          {op.images.map((img) =>
+            <Img src={img} /> 
           )}
 
           <Title>

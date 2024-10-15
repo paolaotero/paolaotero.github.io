@@ -18,10 +18,10 @@ export const Card = styled.div`
   width: 100%;
 `;
 
-export const Img = styled.div`
+export const Img = styled.img`
   width: 100%;
-  height: 300px;
-  background-color: lightgray;
+  height: 400px;
+  object-fit: cover;
   display: flex;
 `;
 
