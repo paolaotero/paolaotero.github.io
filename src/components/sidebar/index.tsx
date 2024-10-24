@@ -19,10 +19,6 @@ export function Sidebar() {
       label: "motion graphics / animación"
     },
     {
-      key: "identidad",
-      label: "identidad"
-    },
-    {
       key: "fotografia",
       label: "fotografía"
     },
