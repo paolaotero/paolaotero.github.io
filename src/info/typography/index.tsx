@@ -1,5 +1,5 @@
 import { Card, Img, ImgContainer, Title, Text, GroupedImages } from "../styles";
-import { Container, Link } from "./styles";
+import { Link } from "./styles";
 
 import PixerModular from "../../assets/images/tipografia/pixer-modular.gif";
 import TypoOne from "../../assets/images/tipografia/one.jpg";

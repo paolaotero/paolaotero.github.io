@@ -33,7 +33,6 @@ export const Text = styled.div`
   font-size: ${font.fn014};
 `;
 
-
 export const GroupedImages = styled.div<{
   direction: "column" | "row";
 }>`
@@ -50,7 +49,9 @@ export const GroupedImages = styled.div<{
   }}
 `;
 
-export const ImgContainer = styled.div<{ layout: "grid" | "scroll" | "column" }>`
+export const ImgContainer = styled.div<{
+  layout: "grid" | "scroll" | "column" | "photo";
+}>`
   ${({ layout }) => {
     switch (layout) {
       case "grid":
@@ -89,6 +90,16 @@ export const ImgContainer = styled.div<{ layout: "grid" | "scroll" | "column" }>
             max-height: 350px;
             min-height: 350px;
             height: 100%;
+          }
+        `;
+      case "photo":
+        return `
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 2rem;
+
+          ${Img} {
+            height: unset;
           }
         `;
     }
