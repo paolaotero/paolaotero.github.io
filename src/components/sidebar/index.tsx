@@ -15,7 +15,7 @@ export function Sidebar() {
       label: "tipografía"
     },
     {
-      key: "animacion",
+      key: "animation",
       label: "motion graphics / animación"
     },
     {
