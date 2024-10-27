@@ -87,7 +87,6 @@ export const ImgContainer = styled.div<{
           gap: 2rem;
           ${Img} {
             margin: auto;
-            max-height: 350px;
             min-height: 350px;
             height: 100%;
           }

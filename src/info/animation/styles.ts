@@ -5,3 +5,13 @@ export const Container = styled.div`
   flex-direction: column;
   gap: 4rem;
 `;
+
+export const IFrameContainer = styled.div`
+  display: flex;
+  justify-content: center;
+
+  iframe {
+    aspect-ratio: 16 / 9;
+    width: 100% !important;
+  }
+`;

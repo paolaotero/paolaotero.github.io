@@ -1,25 +1,25 @@
 import { Card, Img, Title, Text } from "../styles";
-import Video from "../../assets/images/animacion/video.mp4";
+/* import Video from "../../assets/images/animacion/video.mp4"; */
 import ManoGif from "../../assets/images/animacion/manogif.gif";
 import ManoGifMulti from "../../assets/images/animacion/cuadricula.png";
 import Ondas from "../../assets/images/animacion/ondas.gif";
-import { Container } from "./styles";
+import { Container, IFrameContainer } from "./styles";
 
 export function Animation() {
   const images = [
     {
       key: "1",
       title: "Maniac",
-      image: Video,
+      image: "https://www.youtube.com/embed/1WmKXqwaWj8?si=u3UIv6asC7yeK-Pp",
       description:
         "desarrollo de opening alternativa para la miniserie Maniac, de Netflix. 2022.",
     },
-    /* {
+    {
       key: "2",
       title: "2001 - rotoscopia",
-      image: LiteraryConflicts,
-    }, */
-    /* {
+      image: "https://www.youtube.com/embed/3_i6W87jwTI?si=6iKd5GS6910rCvie",
+    },
+    /*     {
       key: "3",
       title: "Você - La Vida Bohème",
       image: LiteraryConflicts,
@@ -43,19 +43,25 @@ export function Animation() {
     }, */
   ];
 
-  const video = images[0];
+  const videos = images.slice(0, 2);
 
   return (
     <Container id="animation">
       <Card>
-        <video width="750" height="500" controls>
-          <source src={video.image} type="video/mp4" />
-        </video>
-        <Title>{video.title}</Title>
-        <Text>{video.description}</Text>{" "}
+        {videos.map((video) => {
+          return (
+            <>
+              <IFrameContainer>
+                <iframe src={video.image} title={video.title}></iframe>
+              </IFrameContainer>
+              <Title>{video.title}</Title>
+              <Text>{video.description}</Text>
+            </>
+          );
+        })}
       </Card>
 
-      {[...images.slice(1)].map((op) => (
+      {[...images.slice(2)].map((op) => (
         <Card key={op.key}>
           <Img src={op.image} />
           {op.title ? <Title>{op.title}</Title> : null}
