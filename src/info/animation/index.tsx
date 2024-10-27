@@ -1,5 +1,4 @@
 import { Card, Img, Title, Text } from "../styles";
-import LiteraryConflicts from "../../assets/images/fanzines/manvself1.jpg";
 import Video from "../../assets/images/animacion/video.mp4";
 import ManoGif from "../../assets/images/animacion/manogif.gif";
 import ManoGifMulti from "../../assets/images/animacion/cuadricula.png";
@@ -15,16 +14,16 @@ export function Animation() {
       description:
         "desarrollo de opening alternativa para la miniserie Maniac, de Netflix. 2022.",
     },
-    {
+    /* {
       key: "2",
       title: "2001 - rotoscopia",
       image: LiteraryConflicts,
-    },
-    {
+    }, */
+    /* {
       key: "3",
       title: "Você - La Vida Bohème",
       image: LiteraryConflicts,
-    },
+    }, */
     {
       key: "4",
       image: Ondas,
@@ -37,11 +36,11 @@ export function Animation() {
       key: "6",
       image: ManoGifMulti,
     },
-    {
+    /* {
       key: "7",
       image: LiteraryConflicts,
       description: "colección personal de animaciones frame a frame. 2024.",
-    },
+    }, */
   ];
 
   const video = images[0];
