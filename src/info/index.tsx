@@ -8,10 +8,10 @@ import { Photo } from "./photo";
 export function Info() {
   return (
     <Container>
-      {/*  <Editorial />
+      <Editorial />
       <Posters />
       <Typography />
-      <Animation /> */}
+      <Animation />
       <Photo />
     </Container>
   );
