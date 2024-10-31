@@ -3,6 +3,8 @@ import { Card, Img, Title, Text } from "../styles";
 import ManoGif from "../../assets/images/animacion/manogif.gif";
 import ManoGifMulti from "../../assets/images/animacion/cuadricula.png";
 import Ondas from "../../assets/images/animacion/ondas.gif";
+import Perspectiva from "../../assets/images/animacion/perspectiva_paola otero.gif";
+
 import { Container, IFrameContainer } from "./styles";
 
 export function Animation() {
@@ -41,6 +43,11 @@ export function Animation() {
       image: LiteraryConflicts,
       description: "colección personal de animaciones frame a frame. 2024.",
     }, */
+
+    {
+      key: "8",
+      image: Perspectiva,
+    },
   ];
 
   const videos = images.slice(0, 2);
